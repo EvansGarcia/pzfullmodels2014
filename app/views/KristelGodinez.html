@@ -1,0 +1,9 @@
+<article class="container" ng-controller="KristelGodinezCtrl"> 
+	<div masonry data-masonry-options='{"transitionDuration": 0 }'>
+	  <div class="masonry-brick photoset box" ng-repeat='photo in photos'>
+	  	<div class="view view-sixth">
+	      <a href="#"> <img src="http://farm{{photo.farm}}.staticflickr.com/{{photo.server}}/{{photo.id}}_{{photo.secret}}_m.jpg"></a>
+      </div>
+	  </div>
+	</div>
+</article>

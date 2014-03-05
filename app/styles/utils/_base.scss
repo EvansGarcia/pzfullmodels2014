@@ -1,0 +1,107 @@
+@import url(http://fonts.googleapis.com/css?family=Lato:100,300,400,700);
+
+
+body{
+  // background: url('../images/bg-models_light.png');
+  font-family: 'Lato', sans-serif;
+  font-weight: 100;
+  > div{
+  	-webkit-box-sizing: border-box;
+  	-moz-box-sizing: border-box;
+  	box-sizing: border-box;
+  }
+}
+
+input[type="text"] {
+	padding-right: 30px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+	font-family: 'Lato', sans-serif;
+	font-weight: 100;
+}
+
+.container{
+  width: 100%;
+}
+
+.lupa {
+	position: absolute;
+	right: 10px;
+	top: 7px;
+}
+
+.header{
+	font-family: 'Lato', sans-serif;
+	height: 300px;
+  margin-bottom: 20px;
+  overflow: hidden;
+	position: relative;
+	background: url(../images/background-header.jpg) no-repeat;
+	background-attachment: fixed;
+	-webkit-background-size: 100%;
+	background-size: 100%;
+
+	.branding{
+		position: fixed;
+		top: 22px;
+		left: 20%;
+		z-index: 99999;
+	}
+
+	.bar{
+		height: 100px;
+		position: absolute;
+		bottom: 0;
+		background: rgba(palevioletred,0.9);
+		border-bottom: 1px solid rgba(black,0.3);
+		border-top: 1px solid rgba(black,0.3);
+		width: 100%;
+		// box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+		z-index: 9999;
+
+		.logo {
+			font-size: 2.5em;
+			position: absolute;
+			left: 15%;
+			color: white;
+			top: 24px;
+			&:before{
+		    content: '';
+				background: url(../images/pzfullmodels-logo.jpg) no-repeat;
+				border-radius: 50%;
+				height: 80px;
+				left:-100px;
+				position: absolute;
+				width: 80px;
+				top: -15px;
+			}
+		}
+
+		#custom-search-form {
+			position: absolute;
+			right: 10%;
+			top: 32px;
+			.search-query {
+				height: 30px;
+				border-radius: 4px;
+				padding-left: 5px;
+				border: 0;
+			}
+			.btn-query {
+				color: white;
+				background-color: rgba(0,0,0,.8);
+				border-color: black;
+				border: 0;
+			}
+		}
+	}
+}
+.pics{
+	cursor: pointer;
+}

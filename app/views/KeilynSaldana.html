@@ -1,0 +1,17 @@
+<article class="container" ng-controller="KeilynSaldanaCtrl"> 
+	<div masonry data-masonry-options='{"transitionDuration": 0 }'>
+	  <div class="masonry-brick photoset box" ng-repeat='photo in photos'>
+	  	<div class="view view-sixth">
+	      <a href="#"> <img src="http://farm{{photo.farm}}.staticflickr.com/{{photo.server}}/{{photo.id}}_{{photo.secret}}_m.jpg"></a>
+      </div>
+	  </div>
+	</div>
+</article>
+
+<!-- <img src="http://farm8.staticflickr.com/7086/7403033944_579bbd92b4.jpg" data-glisse-big="http://farm8.staticflickr.com/7086/7403033944_579bbd92b4_c.jpg" rel="mariaRamirez" alt="Maria Ramirez" class="pics"/>
+<img src="http://farm8.staticflickr.com/7083/7172880072_d46e47c8ca_m.jpg" data-glisse-big="http://farm8.staticflickr.com/7083/7172880072_d46e47c8ca_b.jpg" rel="KeilynSaldana" alt="KeilynSaldana" class="pics">
+
+<script>
+  $(function () {$('.pics').glisse({speed: 500, changeSpeed: 550, effect:'fade', fullscreen: false}); console.log('tom');});  
+
+</script> -->

@@ -1,0 +1,22 @@
+<div ng-controller="MainCtrl">
+  <div class="row" ng-show="!modelosCargadas">
+    Cargando...
+  </div>
+  <div class="" ng-show="modelosCargadas">
+    <!-- <div masonry> -->
+    <div masonry data-masonry-options='{"transitionDuration": 0 }'>
+    <!-- <div> -->
+      <div class="masonry-brick photoset box" ng-repeat='photoset in photosets | filter:searchModel'>
+        <div class="view view-sixth">
+          <a href="#/{{photoset.url}}"> <img src="http://farm{{photoset.farm}}.staticflickr.com/{{photoset.server}}/{{photoset.primary}}_{{photoset.secret}}_m.jpg"></a>
+          <div class="mask">
+            <h2>{{photoset.title}}</h2>
+            <!-- <p>{{photoset.description}}</p> -->
+            <a href="#/{{photoset.url}}" class="info">Ver Galer&iacute;a</a>
+          </div>
+        </div>
+      </div>
+      {{actualizarRootModel()}}
+    </div>
+  </div>
+</div>
